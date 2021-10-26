@@ -2,16 +2,11 @@
     width: 30%;
 }
 
-.abc {
-    font-size: 18px;
-}
-
-.row.nav.d-sm-flex.d-md-none {
-    padding: 5px;
-    padding-left: 10px !important;
-    font-weight: 700;
-    padding-right: 0px;
-    font-size: 17px;
+.nav .text-secondary {
+    /* padding-right: 100px; */
+    padding: 0 85px;
+    padding-top: 10px;
+    font-size: xx-large;
 }
 
 nav.nav.navbar-toggler {
@@ -21,11 +16,11 @@ nav.nav.navbar-toggler {
 
 .has-search .form-control {
     padding-left: 2.375rem;
-    margin-top: 10px;
+    margin-top: 11px;
     background-color: rgb(243, 241, 241);
     border-radius: 8px;
-    font-size: 15px;
 }
+
 
 .has-search .form-control-feedback {
     position: absolute;
@@ -35,8 +30,7 @@ nav.nav.navbar-toggler {
     height: 2.375rem;
     line-height: 2.375rem;
     text-align: center;
-    /* color: rgb(92, 91, 91); */
-    color: black;
+    color: rgb(92, 91, 91);
     top: 10px;
 }
 
@@ -54,7 +48,7 @@ nav.nav.navbar-toggler {
 
 .card-view {
     background-color: rgb(243, 241, 241);
-    height: auto;
+    height: 600px;
 }
 
 .row .card-display {
@@ -67,21 +61,50 @@ nav.nav.navbar-toggler {
     font-size: 20px;
     font-weight: 500;
 }
-
-.alert.alert-danger {
-    margin: 10px;
-    width: 89px;
-    height: 28px;
-    padding: inherit;
-    color: red;
-    font-weight: 700;
-    font-size: 16px !important;
+.date{
+    font-size: 15px!important;
+    padding: 10px;
 }
-
+.col-4 img{
+margin-left: -25px;
+}
 .col-4.padi-cg {
-    padding: 0 !important;
+    /* padding: 0 !important; */
+    justify-content: left;
+    text-align: left; 
+    
+ 
+    
 }
 
+.col-6{
+font-size: 25px;
+color: grey;
+}
+.active {
+    display: inline-block;
+    border-bottom: solid 5px rgb(5, 202, 5);
+    padding: 0 10px;
+  }
+.status {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.upper{
+    padding-left: 20px;
+    color: grey;
+    font-size: 20px!important;
+    font-weight: 700;
+}
+
+.left{
+margin-left: -70px;
+}
+.red{
+    color: grey;
+}
 .col-sm-12.col-md-4 {
     margin: 5px 0 !important;
 }
@@ -92,42 +115,113 @@ nav div {
 
 nav .h5 {
     width: 300px;
+    font-size: 30px;
+    padding-top: 10px;
 }
 
-input.form-control {
-    width: 450px !important;
-}
+/* nav .main {
+    width: 600px !important;
+} */
 
-.status-active {
+/* .status-active {
     display: inline-block;
     border-bottom: solid 6px rgb(5, 202, 5);
     padding: 0 10px;
-}
-
+} */
 .status div {
     text-align: center;
 }
+.scrollmenu ul{
+    /* list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; */
+    list-style-type: none;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.scrollmenu li{
+    display: inline-block;
 
-@media only screen and (max-width: 768px) {
-    nav .main {
-        width: 100%;
+}
+
+.scrollmenu {
+    /* background-color: white; */
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    margin-bottom: -5px;
+    margin-top: -12px;
+   
+    
+  }
+  .scrollmenu a {
+    display: block;
+    width: 100px;
+    color: grey;
+    text-align: center;
+    padding-top: 1px ;
+    padding-bottom: 18px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .active {
+    display: inline-block;
+    border-bottom: solid 5px rgb(5, 202, 5);
+    padding: 0 10px;
+  }
+  
+/*   
+  div.scrollmenu a {
+    display: inline-block;
+    color: grey;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  } */
+  .scrollmenu::-webkit-scrollbar{
+      width: 2px;
+  }
+.scrollmenu ul li{
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.Tprice{
+    padding-top: 27px;
+    
+}
+
+@media only screen and (max-width: 1550px) {
+   
+    .left{
+        /* margin-left: -38px; */
+
+        display: -webkit-box;
+        max-width: 320px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+        .col-6{
+            font-size: 11px;
+        }
+       
+       .left{
+        padding-left: 60px;
     }
-    nav .main .form-group {
-        width: 100%;
-    }
+   
 }
-
-.align-right {
-    text-align: right;
-}
-
-.hide-bot {
-    display: none !important;
-}
-
-@media only screen and (min-width: 768px) {
+@media(min-width: 770px){
     .top-change {
-        top: 20px;
+        top: 15px;
     }
     .card-view {
         height: 650px;
@@ -135,4 +229,114 @@ input.form-control {
     .hide-bot {
         display: flex !important;
     }
+    input.form-control{
+        width: 420px !important;
+    }
+    .left{
+        display: -webkit-box;
+        max-width: 320px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+        .col-6{
+            font-size: 20px;
+            
+        }
+        
+        
+       
+        
+}
+
+@media only screen and (max-width: 767px) {
+    nav .main {
+        width: 100%;
+    }
+    nav .main .form-group {
+        width: 100%;
+    }
+    .extra-pad-space{
+        padding-right: 0px !important;
+        padding-left: 9px !important;
+       
+    }
+    .align-right {
+        text-align: right;
+        padding: 20px;
+        
+        
+    }
+    input.form-control{
+        width: 200px !important;
+    }
+    .top-change{
+        top: 15px;
+    }
+    
+    .hide-bot {
+        display: none !important;
+    }
+    .col-4{
+        font-size: 17px;
+    }
+    .col-6{
+        font-size: 16px;
+    }
+    
+    .scrollmenu ul{
+       
+    justify-content: space-between;
+      margin-left: 21px;
+      padding: 0%;
+  
+        
+      
+    }
+    .scrollmenu a {
+      
+        font-size: 18px;
+       
+      }
+      .scrollmenu {
+          
+            margin-right: 12px;
+            margin-left: -15px;
+           
+        
+      }
+      
+    .left{
+        margin-left: -38px;
+
+        display: -webkit-box;
+        max-width: 320px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+      
+    
+}
+@media only screen and (max-width: 580px) {
+   
+    .top-change{
+        top: -4px
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+   
+    .left{
+        padding-left: 7px;
+    }
+    .upper{
+       
+        display: -webkit-box;
+        max-width: 320px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
 }
