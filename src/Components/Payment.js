@@ -15,7 +15,7 @@ const Payment=()=> {
             </div>
             <Navbar/>
             <div class="container-fluid">
-            <div className="row card-view">
+            <div className="row card-view ">
                 <div className="col-sm-12 col-md-4">
                     <div className=" card-display">
                         <div className="row">
@@ -90,7 +90,7 @@ const Payment=()=> {
                     </div>
                 </div>
 
-                <div className="row w-100 p-150 hide-bot">
+                <div className="row w-100 p-130 hide-bot">
                     <div className="col-6 bottom1" style={{fontSize:'23px',fontWeight:'700'}}>
                         Total Amount
                     </div>
